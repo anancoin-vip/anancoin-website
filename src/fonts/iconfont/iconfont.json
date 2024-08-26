@@ -1,0 +1,16 @@
+{
+  "id": "4512659",
+  "name": "sol-dapp",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "39982253",
+      "name": "复制",
+      "font_class": "copy",
+      "unicode": "e6ce",
+      "unicode_decimal": 59086
+    }
+  ]
+}

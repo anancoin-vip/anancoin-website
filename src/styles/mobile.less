@@ -1,0 +1,161 @@
+@media (max-width: 480px) {
+  :root {
+    --form-item-height: .9rem;
+  }
+  #root {
+    .home-container {
+      .header-container {
+        height: auto;
+        &::after {
+          width: 2.05rem;
+          height: 2rem;
+          top: 1.14rem;
+          right: .5rem;
+          left: auto;
+          transform: rotateY(180deg);
+        }
+        .logo {
+          top: .3rem;
+          left: .3rem;
+          gap: .1rem;
+          z-index: 1;
+          .logo-name {
+            font-size: .52rem;
+          }
+          .logo-icon {
+            width: .8rem;
+            height: .8rem;
+          }
+        }
+        .logo-sub-name {
+          font-size: .2rem !important;
+        }
+        .card-container {
+          position: static;
+          padding: 1.9rem .3rem .5rem;
+          .tab-container {
+            font-size: .32rem;
+            .tab-item {
+              border-bottom-width: .04rem;
+            }
+          }
+        }
+        .card {
+          width: 6.9rem;
+          &-body {
+            padding: 0.25rem 0.36rem 0.36rem;
+            gap: .3rem;
+            z-index: initial;
+            .field {
+              .balance-number {
+                font-size: .3rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .symbol-icon {
+          width: .5rem;
+          height: .5rem;
+        }
+      }
+    }
+    .header-right {
+      top: 0.34rem !important;
+      right: 0.23rem;
+    }
+    .telegram,
+    .twitter {
+      display: none;
+    }
+    .card.integrated-terminal {
+      width: 100%;
+    }
+    .content-container {
+      .content-box {
+        padding: 0;
+        background-image: none;
+      }
+      .token-info {
+        width: auto;
+        line-height: 1.5;
+        font-size: .3rem;
+        padding: 0 .3rem;
+        .title {
+          font-size: .52rem;
+          text-align: center;
+        }
+        .info-label {
+          font-size: .26rem;
+          margin-bottom: 0;
+        }
+        .mint-address {
+          width: 3.8rem;
+        }
+      }
+      &-footer {
+        height: 1rem;
+      }
+    }
+    .tokenomics {
+      width: 80%;
+      .title {
+        font-size: .52rem;
+        margin-top: .12rem;
+      }
+      &-list  {
+        width: auto;
+        flex-direction: column;
+        gap: .4rem;
+        margin-top: .4rem;
+        > .item {
+          margin: 0;
+          width: 100%;
+          .item-title {
+            font-size: .22rem;
+          }
+          .item-description {
+            font-size: .2rem;
+          }
+        }
+      }
+    }
+    .roadmap {
+      margin-top: .6rem;
+      .title {
+        font-size: .52rem;
+      }
+      &-list {
+        padding-top: .4rem !important;
+      }
+      .arrow-box {
+        display: none;
+      }
+      .stage-box {
+        flex-direction: column;
+        .stage-column {
+          width: 100%;
+          transform: translate(0) !important;
+          ul > li {
+            font-size: .2rem;
+          }
+        }
+      }
+    }
+    .footer-background {
+      height: 1.6rem;
+    }
+  }
+  .wallet-adapter-button {
+    height: .7rem !important;
+    line-height: .7rem !important;
+    font-size: .24rem !important;
+    padding: 0 .4rem !important;
+  }
+  .modal-box {
+    width: 90% !important;
+  }
+  .market-btn-text {
+    display: none;
+  }
+}

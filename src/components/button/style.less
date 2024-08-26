@@ -1,0 +1,44 @@
+.button {
+  height: var(--form-item-height);
+  border-radius: var(--border-radius);
+  font-size: .28rem;
+  position: relative;
+  transition: all .2s;
+  padding: 0 .2rem;
+  border: .01rem solid var(--primary-color);
+  font-weight: 600;
+  color: var(--primary-color);
+  --default-bg-color: #DFE7D6;
+  background-color: var(--default-bg-color);
+  &:active {
+    transform: scale(.9);
+  }
+  &:hover {
+    --primary-color: #5f911a;
+    --default-bg-color: #ced9c1;
+  }
+  &.disabled {
+    color: #9E9E9E !important;
+    border-color: #cbcbcb;
+    background-color: #eeeeee !important;
+    &.button-type-primary {
+      background-color: #cbcbcb !important;
+    }
+    &.button-type-outline {
+      background-color: transparent !important;
+    }
+  }
+  &&-type-primary {
+    color: #fff;
+    background-color: var(--primary-color);
+  }
+  &&-type-outline {
+    background-color: transparent;
+  }
+  &&-size-small {
+    height: .5rem;
+  }
+  &&-loading {
+    pointer-events: none;
+  }
+}

@@ -1,0 +1,199 @@
+@import '@/fonts/iconfont/iconfont.css';
+@import './vars.less';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  color: var(--font-main-color);
+  font-family: 'PoetsenOne';
+  background-color: #fefafa;
+}
+
+a { color: var(--primary-color); }
+
+.font-small { font-size: .16rem !important; }
+.font-middle { font-size: .24rem !important; }
+.font-primary { color: var(--primary-color); }
+.pointer { cursor: pointer; }
+.deleted-text { text-decoration: line-through; }
+.font-main { color: var(--font-main-color); }
+
+.omit {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.relative { position: relative; }
+
+.flex {
+  display: flex;
+  &-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-v {
+    display: flex;
+    flex-direction: column;
+  }
+  &-h-center,
+  &-center {
+    display: flex;
+    justify-content: center;
+  }
+  &-v-center,
+  &-center {
+    display: flex;
+    align-items: center;
+  }
+  &-h-end {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-1 {
+    flex: 1;
+  }
+  &-box {
+    display: flex;
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+@font-face {
+  font-family: "PoetsenOne";
+  src: url("@/fonts/PoetsenOne-Regular-1.ttf") format("truetype");
+}
+[class|=icon] {
+  font-family: "iconfont" !important;
+  font-size: .16rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &:not(:empty) {
+    &::before {
+      margin-right: 2px;
+    }
+  }
+}
+
+.card {
+  width: 7.24rem;
+  border-radius: .1rem;
+  background-color: #EFEFEF;
+  &-body {
+    padding: .2rem;
+    gap: .4rem;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+.field {
+  height: var(--form-item-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: var(--border-radius);
+  padding: 0 .2rem;
+  background-color: #fff;
+  font-size: .28rem;
+  &.input {
+    background-color: #D8D8D8;
+    &.readonly {
+      border-color: #D8D8D8;
+      background-color: #D8D8D8;
+    }
+  }
+}
+
+.loading {
+  width: 0.5rem;
+}
+
+.disabled {
+  pointer-events: none;
+}
+
+.divider {
+  margin: 0;
+  height: 1px;
+  &::before, &::after {
+    height: 1px;
+    background-color: #B5B5B5;
+  }
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  &-box {
+    color: #a6adbb;
+    background-color: var(--modal-bgc);
+    .textarea {
+      background-color: transparent;
+    }
+  }
+}
+.toast {
+  padding: .5rem;
+  z-index: 999;
+  .alert {
+    display: flex;
+    padding: .15rem .2rem;
+    border-radius: var(--border-radius);
+    gap: .3rem
+  }
+}
+.dot {
+  position: relative;
+  z-index: 7;
+  &::after {
+    content: "";
+    position: absolute;
+    top: -0.25em;
+    right: -0.25em;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    background-color: red;
+  }
+}
+.modal-box {
+  border-radius: var(--border-radius);
+  padding: .24rem;
+  width: 10rem;
+  .close-btn {
+    top: .3rem;
+    right: .2rem;
+    min-height: .6rem;
+    height: .6rem;
+    width: .6rem;
+    font-size: .24rem;
+    z-index: 1;
+  }
+}
+.textarea {
+  height: .4rem;
+  min-height: .4rem;
+  font-size: .3rem;
+  padding: .4rem .3rem;
+  border-radius: var(--border-radius);
+}
+textarea.textarea {
+  line-height: 1.2;
+  height: 1.5rem;
+}
+.join {
+  .button {
+    padding: .1rem .2rem !important;
+  }
+}
+.tooltip:before {
+  padding: .12rem .2rem;
+  font-size: .2rem;
+  line-height: .4rem;
+}

@@ -1,0 +1,51 @@
+.roadmap {
+  margin-top: 1.36rem;
+  .title {
+    font-size: .58rem;
+    color: #3D3D3D;
+    text-align: center;
+    font-weight: 700;
+  }
+  &-list {
+    .arrow-box,
+    .stage-box {
+      display: flex;
+    }
+    .arrow-box {
+      .arrow {
+        width: 4rem;
+        height: 1.24rem;
+        background: url(@/assets/arrow.png) 0% 0% / contain no-repeat;
+        &:first-child {
+          margin-left: 50px;
+        }
+      }
+    }
+    .stage-box {
+      .stage-column {
+        width: 4rem;
+        padding: 0 24px;
+        h1, h2, h3, h4, h5 {
+          font-weight: 700;
+          font-size: .4rem;
+          color: #3D3D3D;
+        }
+        ul {
+          list-style: circle;
+          padding-left: 16px;
+          > li {
+            padding: 2% 0;
+            list-style: disc;
+            font-weight: 400;
+            font-size: .2rem;
+            line-height: 1.2;
+            color: #3D3D3D;
+            &::marker {
+              color: #58AB00;
+            }
+          }
+        }
+      }
+    }
+  }
+}

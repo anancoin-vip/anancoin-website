@@ -1,0 +1,61 @@
+.tag {
+  font-size: 0.24rem;
+  padding: 0.1rem 0.2rem;
+  border-radius: 1rem;
+  text-wrap: nowrap;
+  height: 0.36rem;
+  border-color: currentColor;
+  background-color: transparent;
+  color: currentColor;
+  border: 1px solid currentColor;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &&-outline {
+    background-color: transparent !important;
+  }
+  &&-size-small {
+    padding: 0.1rem;
+  }
+  &&-type-success {
+    color: var(--font-main-color);
+    border-color: var(--success-color);
+    background-color: var(--success-color);
+    &.tag-outline {
+      color: var(--success-color);
+    }
+  }
+  &&-type-badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    padding: 0.1rem;
+  }
+  &&-type-badge,
+  &&-type-error {
+    color: var(--font-main-color);
+    border-color: var(--error-color);
+    background-color: var(--error-color);
+    &.tag-outline {
+      color: var(--error-color);
+    }
+  }
+  &&-type-warning {
+    color: var(--font-main-color);
+    border-color: var(--warning-color);
+    background-color: var(--warning-color);
+    &.tag-outline {
+      color: var(--warning-color);
+    }
+  }
+  &&-type-info {
+    color: var(--font-main-color);
+    border-color: var(--info-color);
+    background-color: var(--info-color);
+    &.tag-outline {
+      color: var(--info-color);
+    }
+  }
+}
