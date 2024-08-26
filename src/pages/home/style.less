@@ -1,0 +1,191 @@
+.home-container {
+  .symbol-icon {
+    width: .5rem;
+    height: .5rem;
+  }
+  .header-container {
+    position: relative;
+    height: 12.47rem;
+    background: url(@/assets/home1.png) 0% 0% / cover no-repeat;
+    z-index: 1;
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0.57rem;
+      width: 8.41rem;
+      height: 8.17rem;
+      background: url(@/assets/home1-1.png) 0% 0% / contain no-repeat;
+    }
+    .logo {
+      position: absolute;
+      top: 0.2rem;
+      left: 0.46rem;
+      display: flex;
+      align-items: center;
+      gap: 0.2rem;
+      &-icon {
+        width: 1.2rem;
+        height: 1.2rem;
+        background: url(@/assets/logo.png) 0% 0% / contain no-repeat;
+      }
+      &-name {
+        font-size: 0.74rem;
+        font-weight: 400;
+        line-height: 0.8;
+      }
+      &-sub-name {
+        margin-top: 6px;
+        font-size: 0.24rem;
+        color: #666;
+        line-height: 1;
+      }
+    }
+    .header-right {
+      position: absolute;
+      top: .6rem;
+      right: .3rem;
+      display: flex;
+      align-items: center;
+      gap: .2rem;
+    }
+    .telegram {
+      width: 2.4rem;
+      height: .5rem;
+      background: url(@/assets/telegram.png) 0% 0% / contain no-repeat;
+    }
+    .twitter {
+      width: 2.1rem;
+      height: .5rem;
+      background: url(@/assets/twitter.png) 0% 0% / contain no-repeat;
+    }
+    .card-container {
+      position: absolute;
+      top: 3.6rem;
+      right: 1.3rem;
+      padding: .3rem;
+      border-radius: .1rem;
+      backdrop-filter: blur(3px);
+      background-color: rgba(229, 229, 229, .5);
+
+      .tab-container {
+        display: flex;
+        gap: .32rem;
+        padding-left: .2rem;
+        padding-bottom: .12rem;
+        z-index: 1;
+        position: relative;
+        font-size: .24rem;
+        .tab-item {
+          padding-bottom: .08rem;
+          border-bottom: 4px solid transparent;
+          font-weight: bold;
+          cursor: pointer;
+          &.actived {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+          }
+        }
+      }
+      .balance-number {
+        font-size: .32rem;
+        font-weight: 400;
+        color: var(--font-main-color)
+      }
+    }
+  }
+  .token-info {
+    margin: 0 auto;
+    font-size: .54rem;
+    line-height: 1;
+    word-break: break-all;
+    > div:not(:first-child) {
+      margin-top: .38rem;
+    }
+    .title {
+      font-size: .56rem;
+    }
+    .info-label {
+      font-size: .2rem;
+      margin-bottom: .12rem;
+    }
+    .info-description {
+      word-break: break-word;
+      white-space: break-spaces;
+    }
+    .mint-address {
+      width: 5.76rem;
+    }
+    .name-symbol {
+      display: flex;
+      gap: .65rem;
+    }
+  }
+  .content-container {
+    position: relative;
+    .content-box {
+      padding-top: .3rem;
+      padding-left: 1rem;
+      background-image: url(@/assets/home2-1.png), url(@/assets/home2-3.png);
+      background-repeat: no-repeat, no-repeat;
+      background-position: right 1.54rem, right 0.38rem;
+      background-size: 9.24rem 7.64rem, 9.24rem 2rem;
+      background-color: #111;
+    }
+    &-symbol {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2.7rem;
+      height: 1.92rem;
+      position: absolute;
+      top: .74rem;
+      left: 1.34rem;
+      font-size: .58rem;
+      font-weight: 400;
+      color: #3D3D3D;
+      background: url(@/assets/home2-2.png) 0% 0% / contain no-repeat;
+      > div {
+        transform: rotate(327deg) translate(0, -0.1rem);
+      }
+    }
+    &-footer {
+      height: 3.08rem;
+      margin-top: -2px;
+      background: url(@/assets/home2-4.png) 0% 0% / cover no-repeat;
+    }
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .footer-background {
+    height: 6.1rem;
+    background: url(@/assets/home3.png) 0% 0% / cover no-repeat;
+    background-position: bottom;
+  }
+  .market-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border: 0.04rem solid #000;
+    border-radius: 10px;
+    padding: .1rem;
+    text-wrap: nowrap;
+    font-size: .3rem;
+    font-weight: bold;
+    color: #000;
+    &:hover {
+      border-color: #86c148;
+      color: #86c148;
+    }
+    &-icon {
+      width: 0.6rem;
+      max-width: none;
+    }
+  }
+}
